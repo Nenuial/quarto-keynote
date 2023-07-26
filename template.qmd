@@ -1,0 +1,114 @@
+---
+title: "Titre"
+subtitle: "Sous-titre"
+author: "Auteur"
+institute: "Institute"
+date: last-modified
+date-format: "MMMM YYYY"
+lang: "fr-ch"
+
+format:
+  default-key-revealjs:
+    progress: false
+    menu: false
+    footer: "OC Géo"
+callout-appearance: simple
+---
+
+## {.no-title}
+
+::: {.columns .absolute top=350 width="100%"}
+::: {.column width="40%"}
+:::
+::: {.column width="55%"}
+
+### Titre chapitre {.chapter}
+### INTRODUCTION {.r-fit-text}
+
+:::
+:::
+
+![](aurora.png){.image-left}
+
+## Introduction
+
+This is an **example** *template*.
+
+::: {.callout-tip}
+
+## A tip
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sem purus, egestas ut nulla placerat, sodales venenatis nisi. Quisque commodo malesuada ultrices.
+
+:::
+
+## Links
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sem purus, egestas ut nulla placerat, sodales venenatis nisi. Quisque commodo malesuada ultrices.
+
+::: {.callout-link}
+
+## Some links
+
+- Link 1
+- Link 2
+
+:::
+
+## Timeline {.fragment-remove}
+
+::: {.container .fragment .fade-up fragment-index=1}
+::: {.timeline .timeline-left style="height: 600px;"}
+
+::: {.timeline-block}
+::: {.timeline-icon}
+
+:::
+::: {.timeline-content}
+Lorem ipsum.
+
+::: {.timeline-details .fragment .fade-out fragment-index=2}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sem purus, egestas ut nulla placerat, sodales venenatis nisi. Quisque commodo malesuada ultrices.
+:::
+::: {.timeline-date}
+1 jun 1999
+:::
+:::
+:::
+
+::: {.timeline-block .fragment .fade-up fragment-index=2}
+::: {.timeline-icon}
+
+:::
+::: {.timeline-content}
+Lorem ipsum.
+
+::: {.timeline-details .fragment .fade-out fragment-index=3}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sem purus, egestas ut nulla placerat, sodales venenatis nisi. Quisque commodo malesuada ultrices.
+:::
+::: {.timeline-date}
+1 jan 2000
+:::
+:::
+:::
+
+:::
+:::
+
+## Test
+
+```{r, eval=FALSE, echo=TRUE}
+some_var = 123
+
+example_function(some_var)
+```
+
+
+:::callout-women
+
+## Et les femmes ?
+
+- A thing
+- Another
+
+:::

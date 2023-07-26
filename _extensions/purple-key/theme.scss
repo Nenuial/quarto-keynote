@@ -1,0 +1,26 @@
+/*-- scss:defaults --*/
+
+// Colors
+
+$body-bg: #381a90; // Background color
+$body-color: #e0d9fb; // Default text color
+$link-color: #599be4; // Link color
+$link-color-hover: lighten($link-color, 15%);
+$selection-bg: #1c527e; // Color of selection
+$selection-color: #ced2fa; // Color of selected text
+$border-color: lighten($body-color, 30%); // Color for borders
+$presentation-heading-color: #90b7f0; // Color for headings
+
+$code-block-bg: $body-bg; // Code block background color
+$code-block-border-color: lighten($body-color, 60%); // Code block border color
+$code-color: var(–quarto-hl-fu-color);
+$code-bg: transparent;
+
+$light-bg-text-color: $body-bg;
+$light-bg-link-color: $link-color;
+$light-bg-code-color: $body-bg;
+$dark-bg-text-color: $body-color;
+$dark-bg-link-color: $link-color;
+$dark-bg-code-color: $body-color;
+
+/*-- scss:rules --*/

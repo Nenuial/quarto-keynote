@@ -1,0 +1,271 @@
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400&display=swap');
+
+$font-family-sans-serif: 'Fira Sans', sans-serif;
+$presentation-heading-font: 'Fira Sans', sans-serif;
+$presentation-heading-font-weight: 400 !default;
+$presentation-font-size-root: 36px;
+
+/*-- scss:rules --*/
+
+.slide h1,
+.slide h2 {
+  border-bottom: 2px solid $presentation-heading-color;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.no-title h1,
+.no-title h2 {
+  display: none !important;
+}
+
+.no-title h3,
+.no-title p {
+  margin-left: 0em !important;
+}
+
+.reveal .footer {
+  bottom: -30px !important;
+}
+
+.reveal .slide-logo {
+  bottom: -35px !important;
+  max-height: 3rem !important;
+}
+
+.underline {
+  border-bottom: 2px solid;
+}
+
+.chapter {
+  text-align: center;
+  border-bottom: 2px solid $body-color;
+  font-weight: 200 !important;
+  color: $body-color !important;
+}
+
+html.print-pdf .slides {
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-right: 0px;
+}
+
+#title-slide {
+  text-align: left;
+
+  .title {
+    color: $presentation-heading-color;
+    margin-left: 0px !important;
+    border-bottom: 2px solid $presentation-heading-color;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    color: $body-color;
+    font-style: italic;
+    font-variant: small-caps;
+  }
+
+  .institute,
+  .quarto-title-affiliation,
+  .quarto-title-author-email {
+    font-style: italic;
+    font-size: 80%;
+    // color: #7F7F7F;
+  }
+
+  .author,
+  .quarto-title-author-name {
+    color: $body-color;
+  }
+
+  .quarto-title-authors {
+    display: inline-block;
+    justify-content: left;
+    font-size: 80%;
+    margin-right: auto;
+    vertical-align: top;
+
+    .quarto-title-author {
+      padding-left: 0em;
+      padding-right: 0em;
+      width: 100%;
+    }
+  }
+  
+  .date {
+    display: inline-block;
+    vertical-align: top;
+    justify-content: right;
+    float: right;
+    margin-left: auto;
+    margin-top: 0em;
+    font-size: 80%;
+  }
+
+}
+
+
+.v-center-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+}
+
+.v-center {
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+}
+
+.v-right {
+  display: flex;
+  justify-content: right;
+  align-items: self-end;
+}
+
+.row {
+  margin-top: 10px;
+}
+
+.pull-left {
+  float: left;
+  width: 50% !important;
+  margin-bottom:20px;
+}
+.pull-right {
+  float: right;
+  width: 50% !important;
+  margin-bottom:20px;
+}
+
+img.sticker-float-right {
+  height: 160px;
+  position: absolute;
+  top: -0.5em;
+  right: -1em;
+  z-index: 1;
+}
+img.sticker-float-left {
+  height: 160px;
+  position: absolute;
+  top: -0.5em;
+  left: -1em;
+  z-index: 1;
+}
+
+img.sticker-float-midright {
+  height: 160px;
+  position: absolute;
+  top: -0.5em;
+  right: 12em;
+  z-index: 1;
+}
+
+.box {
+  width: 100%;
+  border-radius: 25px;
+  padding: 5px 0px 5px 25px;
+  margin-bottom: -100px;
+  background-color: #ffffff99;
+}
+
+.box-blond {
+  width: 100%;
+  border-radius: 25px;
+  padding: 5px 0px 5px 25px;
+  margin-bottom: -100px;
+  background-color: #faf0cadd;
+}
+
+.center {
+  text-align: center;
+}
+
+.v-fill {
+  height: 100%;
+}
+
+.box.opaque {
+  width: 100%;
+  border-radius: 25px;
+  padding: 5px 0px 5px 25px;
+  background-color: #ffffff;
+}
+
+.box p{
+  margin: 10px 20px 0px 0px;
+}
+
+
+.blur {
+  filter: blur(5px);
+  opacity: 50%;
+}
+.reveal .slides section .fragment.blur {
+  filter: blur(5px);
+  opacity: 50%;
+  visibility: visible;
+}
+
+.reveal .slides section .fragment.blur.visible {
+  filter: none;
+  opacity: 100%
+}
+
+img.icon {
+  height: 0.75em;
+  margin: 0;
+}
+
+.dateplace {
+  font-size: 35px;
+  margin-left: 0.6em !important;
+  padding-bottom: 1.2em;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 70px;
+  margin-top: -0.5em !important;
+  margin-left: 0.3em !important;
+}
+
+@keyframes blur {
+  0%   {filter: blur(0px);  opacity: 100%;}
+  100% {filter: blur(5px);  opacity: 50%;}
+}
+
+.title>p>strong.blur {
+  animation-name: blur;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
+.smaller {
+  font-size: 27.5px;
+  margin-left: 0.85em !important;
+}
+
+span.danger {
+  color: #D9534F;
+}
+
+span.term {
+  color: #4582ec;
+}
+
+.fragment-remove .fragment.fade-out.visible {
+    display: none;
+    height:0px;
+    line-height: 0px;
+    font-size: 0px;
+}
+
+.reveal code {
+  white-space: pre;
+}

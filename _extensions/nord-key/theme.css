@@ -1,0 +1,63 @@
+/*-- scss:defaults --*/
+
+/*-- scss:rules --*/
+
+.callout.no-icon .callout-body, .callout.no-icon .callout-content {
+  width: 100%;
+}
+
+.callout-content ul {
+  display: block;
+}
+
+div.callout-paper .callout-icon::before {
+  background-image: url('../resources/images/school.svg');
+}
+div.callout-paper {
+  border-left-color: #4582ec !important;
+}
+
+div.callout-women .callout-icon::before {
+  background-image: url('../resources/images/women.svg');
+}
+
+div.callout-women {
+  border-left-color: #a654e5 !important;
+}
+
+div.callout-link .callout-icon::before {
+  background-image: url('../resources/images/link-variant.svg') !important;
+}
+
+div.callout-link {
+  border-left-color: #4582ec !important;
+}
+
+div.callout-question .callout-icon::before {
+  background-image: url('../resources/images/help.svg');
+}
+div.callout-question {
+  border-left-color: #04d42c !important;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.callout-pro .callout-icon::before {
+  background-image: url('../resources/images/check.svg');
+}
+
+div.callout-pro {
+  border-left-color: #04d42c !important;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.callout-con .callout-icon::before {
+  background-image: url('../resources/images/cross.svg');
+}
+
+div.callout-con {
+  border-left-color: #d9534f !important;
+  overflow: auto;
+  white-space: nowrap;
+}
