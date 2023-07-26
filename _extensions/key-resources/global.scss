@@ -46,6 +46,10 @@ $presentation-font-size-root: 36px;
   color: $body-color !important;
 }
 
+.all-caps {
+  text-transform: uppercase !important;
+}
+
 html.print-pdf .slides {
   border-left: 0px;
   border-top: 0px;
