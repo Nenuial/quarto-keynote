@@ -1,12 +1,11 @@
 title: Default theme
 author: Pascal Burkhard
-version: 1.0.1
+version: 1.0.2
 quarto-required: ">=1.4.0"
 contributes:
   formats:
     revealjs:
-      theme: ["../resources/global.scss", "../resources/letterbox.scss", "custom.scss"]
-      css: ["../resources/timeline.css"]
+      theme: ["../resources/global.scss", "../resources/letterbox.scss", "../resources/timeline.scss", "custom.scss"]
       include-after-body: "../resources/theme.html"
       filters: 
         - ../custom-callouts/custom-callouts.lua
