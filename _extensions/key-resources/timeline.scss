@@ -99,7 +99,7 @@
 .timeline.timeline-alternating:not(.timeline-left) .timeline-block:nth-of-type(2n) .timeline-date {
   left: auto;
   right: 118%;
-  margin-left: -400px;
+  margin-left: -420px;
 }
 
 .timeline p {
@@ -113,11 +113,11 @@
 /* Left based logic */
 .timeline.timeline-left::before {
   left: auto;
-  margin-left: 165px;
+  margin-left: 185px;
 }
 
 .timeline.timeline-left .timeline-block {
-  margin-left: 199px;
+  margin-left: 220px;
   margin-right: 10px;
 }
 
@@ -131,7 +131,7 @@
 }
 
 .timeline.timeline-left .timeline-date {
-  width: 145px;
+  width: 155px;
   left: 0;
   margin-left: -210px;
   text-align: right;
@@ -167,7 +167,8 @@
 .timeline.timeline-with-arrows.timeline-left .timeline-content::after, .timeline.timeline-with-arrows.timeline-left .timeline-content::before {
   left: 0;
   right: 100%;
-  border-left-color: transparent !important; }
+  border-left-color: transparent !important;
+}
 
 .timeline.timeline-with-arrows.timeline-left .timeline-content::after {
   border-right-color: $body-color;
@@ -177,16 +178,19 @@
 .timeline.timeline-with-arrows.timeline-left .timeline-content::before {
   border-right-color: $body-color;
   margin-top: -1px;
-  margin-left: -31px; }
+  margin-left: -31px;
+}
 
 .timeline.timeline-with-arrows.timeline-alternating .timeline-block:nth-of-type(2n) .timeline-content::after, .timeline.timeline-with-arrows.timeline-alternating .timeline-block:nth-of-type(2n) .timeline-content::before {
   left: 0;
   right: 100%;
-  border-left-color: transparent !important; }
+  border-left-color: transparent !important;
+}
 
 .timeline.timeline-with-arrows.timeline-alternating .timeline-block:nth-of-type(2n) .timeline-content::after {
   border-right-color: $body-color;
-  margin-left: -28px; }
+  margin-left: -28px;
+}
 
 .timeline.timeline-with-arrows.timeline-alternating .timeline-block:nth-of-type(2n) .timeline-content::before {
   border-right-color: $body-color;
