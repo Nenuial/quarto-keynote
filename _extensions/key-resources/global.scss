@@ -51,11 +51,15 @@ $presentation-font-size-root: 36px;
   text-transform: uppercase !important;
 }
 
-.v-center-container {
-  display: flex;
+.v-align {
+  display: flex !important;
   justify-content: center;
   align-items: center;
-  height: 90%;
+  height: 100%;
+}
+
+ul {
+  list-style-type: square !important;
 }
 
 html.print-pdf .slides {
