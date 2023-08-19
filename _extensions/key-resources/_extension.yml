@@ -1,5 +1,5 @@
 title: Common ressources
-version: 1.0.16
+version: 1.2.0
 quarto-required: ">=1.4.0"
 contributes:
   formats:
