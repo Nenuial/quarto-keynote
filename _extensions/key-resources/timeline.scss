@@ -81,6 +81,11 @@
   font-size: 80%;
 }
 
+.timeline .timeline-details {
+  font-size: 28px !important;
+  line-height: 28px !important;
+}
+
 .timeline::before {
   position: absolute;
   width: 3px;
