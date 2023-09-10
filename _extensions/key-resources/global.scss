@@ -164,6 +164,7 @@ img.sticker-float-right {
   right: -1em;
   z-index: 1;
 }
+
 img.sticker-float-left {
   height: 160px;
   position: absolute;
@@ -178,6 +179,12 @@ img.sticker-float-midright {
   top: -0.5em;
   right: 12em;
   z-index: 1;
+}
+
+figcaption {
+  font-size: 50%;
+  text-align: center;
+  margin-top: 0.5em;
 }
 
 .box {
