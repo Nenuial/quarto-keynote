@@ -1,8 +1,10 @@
 /*-- scss:defaults --*/
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:ital,wght@0,100;0,200;0,300;0,400&display=swap');
 
 $font-family-sans-serif: 'Fira Sans', sans-serif;
+$font-family-monospace: 'Fira Code', monospace;
 $presentation-heading-font: 'Fira Sans', sans-serif;
 $presentation-heading-font-weight: 400 !default;
 $presentation-font-size-root: 36px;
@@ -291,5 +293,5 @@ span.term {
   border-radius: 4px;
   border: 1px solid #ccc;
   overflow-y: scroll;
-  background-color: darken($body-bg, 10%);
+  background-color: darken($body-bg, 5%);
 }
