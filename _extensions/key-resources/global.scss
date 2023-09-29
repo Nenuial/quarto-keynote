@@ -291,6 +291,13 @@ span.term {
 .cell-output {
   font-size: 60%;
   border-radius: 4px;
-  border: 1px solid #ccc;
+  border: 1px solid $body-color;
   background-color: darken($body-bg, 5%);
+}
+
+.kbd {
+  border: 1px solid $body-color;
+  border-radius: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
