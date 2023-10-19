@@ -149,8 +149,33 @@ document.querySelector(".slides").appendChild(menu_div);
 </script>
 
 <script>
+// Remove footer on slide that have a no-footer class
+Reveal.on('ready', () => {
+    Reveal.on( 'slidechanged', event => {
+        if (Array.from(event.currentSlide.classList).indexOf("no-footer") !== -1) {
+            document.querySelector("div .footer").style.visibility = "hidden";
+        } else {
+            document.querySelector("div .footer").style.visibility = null;
+        }
+    });
+})
+</script>
+
+<script>
 // Move logo
 menu_div = document.querySelector(".slide-logo");
 document.querySelector(".slides").appendChild(menu_div);
 </script>
 
+<script>
+// Remove logo on slide that have a no-logo class
+Reveal.on('ready', () => {
+    Reveal.on( 'slidechanged', event => {
+        if (Array.from(event.currentSlide.classList).indexOf("no-logo") !== -1) {
+            document.querySelector("div .slide-logo").style.visibility = "hidden";
+        } else {
+            document.querySelector("div .slide-logo").style.visibility = null;
+        }
+    });
+})
+</script>

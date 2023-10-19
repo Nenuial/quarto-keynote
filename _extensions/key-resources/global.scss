@@ -18,6 +18,16 @@ $presentation-font-size-root: 36px;
   margin-bottom: 20px;
 }
 
+.slide.has-light-background h2,
+.slide.has-light-background h3 {
+  color: darken($presentation-heading-color, 20%);
+}
+
+.slide.has-dark-background h2,
+.slide.has-dark-background h3 {
+  color: lighten($presentation-heading-color, 20%);
+}
+
 .no-title h1,
 .no-title h2 {
   display: none !important;
@@ -29,13 +39,17 @@ $presentation-font-size-root: 36px;
 }
 
 .reveal .footer {
+  float: left;
   bottom: -30px !important;
+  z-index: 500 !important;
+  color: $presentation-heading-color;
 }
 
 .reveal .slide-logo {
   bottom: -35px !important;
   right: 0px !important;
   max-height: 2rem !important;
+  z-index: 500 !important;
 }
 
 .underline {

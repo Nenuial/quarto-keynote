@@ -112,3 +112,21 @@ example_function(some_var)
 - Another
 
 :::
+
+## Test light background {.no-footer background-color="#e0d9fb"}
+
+```{r, eval=FALSE, echo=TRUE}
+some_var = 123
+
+example_function(some_var)
+```
+
+
+:::callout-women
+
+## Et les femmes ?
+
+- A thing
+- Another
+
+:::
