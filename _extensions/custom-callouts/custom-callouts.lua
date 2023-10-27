@@ -21,6 +21,7 @@ local function customCallouts(div)
     end
     local calloutDiv = {}
     calloutDiv["type"] = calloutClass
+    calloutDiv["attr"] = ""
     calloutDiv["icon"] = true
     calloutDiv["title"] = title
     calloutDiv["content"] = div.content
