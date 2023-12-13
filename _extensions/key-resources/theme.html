@@ -63,12 +63,11 @@ var slide_div = document.querySelectorAll("[data-background-video]");
 
 for (let i = 0; i < video_div.length; i++) {
   video_div[i].setAttribute("class", "background-video-div");
+  video_div[i].setAttribute("controls", "")
 
   slide_div[i].appendChild(video_div[i]);
   slide_div[i].removeAttribute("data-background-video");
 }
-
-Reveal.getCurrentSlide().querySelectorAll("video").forEach(x => x.play());
 
 // Each time we advance slides, as the background videos aren't loaded
 // unless they are a few slides away
@@ -78,12 +77,12 @@ Reveal.on('slidechanged', event => {
 
   for (let i = 0; i < video_div.length; i++) {
     video_div[i].setAttribute("class", "background-video-div");
+    video_div[i].setAttribute("controls", "")
 
     slide_div[i].appendChild(video_div[i]);
     slide_div[i].removeAttribute("data-background-video");
   }
 
-  Reveal.getCurrentSlide().querySelectorAll("video").forEach(x => x.play());
 });
 </script>
 
