@@ -24,3 +24,11 @@ $dark-bg-link-color: #b48ead;
 $dark-bg-code-color: #4f93b8;
 
 /*-- scss:rules --*/
+
+.codewindow {
+  background: #4c566a !important;
+}
+
+.codewindow .header .file {
+  background: #4c566a !important;
+}

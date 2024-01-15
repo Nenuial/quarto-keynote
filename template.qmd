@@ -8,7 +8,7 @@ date-format: "MMMM YYYY"
 lang: "fr-ch"
 
 format:
-  purple-key-revealjs:
+  nord-key-revealjs:
     progress: false
     menu: false
     footer: "OC Géo"
@@ -40,6 +40,12 @@ This is an **example** *template*.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sem purus, egestas ut nulla placerat, sodales venenatis nisi. Quisque commodo malesuada ultrices.
 
+:::
+
+::: {.codewindow .terminal}
+```bash
+pip install test
+```
 :::
 
 ## Links
