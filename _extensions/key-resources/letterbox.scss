@@ -53,6 +53,7 @@ html.print-pdf .quarto-dark {
   left: -$border-leftright-width;
   width: $slide-width / 2 !important;
   max-width: $slide-width / 2 !important;
+  z-index: 500;
 }
 
 .image-right {
