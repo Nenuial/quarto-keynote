@@ -11,6 +11,10 @@ $presentation-font-size-root: 36px;
 
 /*-- scss:rules --*/
 
+.reveal {
+  font-weight: 200;
+}
+
 .slide h1,
 .slide h2 {
   border-bottom: 2px solid $presentation-heading-color;
