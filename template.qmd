@@ -8,7 +8,7 @@ date-format: "MMMM YYYY"
 lang: "fr-ch"
 
 format:
-  nord-key-revealjs:
+  samarqand-key-revealjs:
     progress: false
     menu: false
     footer: "OC Géo"
@@ -32,7 +32,7 @@ callout-appearance: simple
 
 ## Introduction
 
-This is an **example** *template*.
+This is an **example** *template*. With an [example link](template.qmd).
 
 ::: {.callout-tip}
 
@@ -90,7 +90,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sem purus, egestas 
 Lorem ipsum.
 
 ::: {.timeline-details .fragment .fade-out fragment-index=3}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sem purus, egestas ut nulla placerat, sodales venenatis nisi. Quisque commodo malesuada ultrices.
+Lorem [ipsum dolor sit](template.qmd) amet, consectetur adipiscing elit. Nam sem purus, egestas ut nulla placerat, sodales venenatis nisi. Quisque commodo malesuada ultrices.
 :::
 ::: {.timeline-date}
 1 jan 2000
@@ -109,6 +109,7 @@ some_var = 123
 example_function(some_var)
 ```
 
+Some `code` in a slide.
 
 :::callout-women
 
@@ -119,7 +120,9 @@ example_function(some_var)
 
 :::
 
-## Test light background {.no-footer background-color="#e0d9fb"}
+## Test light background {.no-footer background-color="#f3f6f9"}
+
+Some `code` in a slide.
 
 ```{r, eval=FALSE, echo=TRUE}
 some_var = 123
