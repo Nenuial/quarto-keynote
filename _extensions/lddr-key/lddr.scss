@@ -1,0 +1,34 @@
+/*-- scss:defaults --*/
+
+// Colors
+
+$body-bg: #EDECF9; // Background color
+$body-color: #252060; // Default text color
+$link-color: #ffcc05; // Link color
+$link-color-hover: lighten($link-color, 15%);
+$selection-bg: #252060; // Color of selection
+$selection-color: #ffcc05; // Color of selected text
+$border-color: lighten($body-color, 30%); // Color for borders
+$presentation-heading-color: #252060; // Color for headings
+
+$code-block-bg: $body-bg; // Code block background color
+$code-block-border-color: lighten($body-color, 60%); // Code block border color
+$code-color: var(–quarto-hl-fu-color);
+$code-bg: #B6B3E6;
+
+$light-bg-text-color: #252060;
+$light-bg-link-color: #ffcc05;
+$light-bg-code-color: #252060;
+$dark-bg-text-color: #EDECF9;
+$dark-bg-link-color: #ffcc05;
+$dark-bg-code-color: #EDECF9;
+
+/*-- scss:rules --*/
+
+.codewindow {
+  background: #4c566a !important;
+}
+
+.codewindow .header .file {
+  background: #4c566a !important;
+}

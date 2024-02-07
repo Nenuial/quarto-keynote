@@ -1,0 +1,16 @@
+title: LDDR theme
+author: Pascal Burkhard
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    revealjs:
+      theme: ["../key-resources/global.scss", "../key-resources/letterbox.scss", "../key-resources/timeline.scss", "../key-resources/custom-callouts.scss", "lddr.scss"]
+      include-after-body: "../key-resources/theme.html"
+      logo: "../key-resources/images/lddr.svg"
+      filters: 
+        - ../custom-callouts/custom-callouts.lua
+      width: 1280
+      height: 720
+      revealjs-plugins:
+        - codewindow

@@ -8,7 +8,7 @@ date-format: "MMMM YYYY"
 lang: "fr-ch"
 
 format:
-  samarqand-key-revealjs:
+  lddr-key-revealjs:
     progress: false
     menu: false
     footer: "OC Géo"
