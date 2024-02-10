@@ -1,0 +1,19 @@
+/*-- scss:defaults --*/
+
+// Colors
+
+$body-bg: #B4FAF2; // Background color
+$body-color: #2e3440; // Default text color
+$link-color: #559591; // Link color
+$link-color-hover: lighten($link-color, 15%);
+$selection-bg: #559591; // Color of selection
+$selection-color: #2e3440; // Color of selected text
+$border-color: lighten($body-color, 30%); // Color for borders
+$presentation-heading-color: #559591; // Color for headings
+
+$code-block-bg: $body-bg; // Code block background color
+$code-block-border-color: lighten($body-color, 60%); // Code block border color
+$code-color: var(–quarto-hl-fu-color);
+
+/*-- scss:rules --*/
+
