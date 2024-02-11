@@ -63,6 +63,100 @@ html.print-pdf .quarto-dark {
   max-width: $slide-width / 2 !important;
 }
 
+@mixin quarter-screen {
+  background-size: cover;
+  background-position: center;
+  width: calc(($slide-width / 2) - 5px) !important;
+  height: calc(($slide-height / 2) - 5px) !important;
+}
+
+@mixin half-screen {
+  background-size: cover;
+  background-position: center;
+  width: calc(($slide-width / 2) - 5px) !important;
+}
+
+@mixin flex-center-overflow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+
+@mixin flex-img-cover {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+.full-frame {
+  @include full-screen;
+  width: calc($slide-width + $border-leftright-width) !important;
+  height: calc($slide-height + $border-updown-width) !important;
+  left: -$border-leftright-width;
+}
+
+.full-frame iframe {
+  height: 100%;
+  width: 100%;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  z-index: 1 !important;
+}
+
+.left-half {
+  @include full-screen;
+  @include half-screen;
+  @include flex-center-overflow;
+  left: -$border-leftright-width;
+}
+
+.left-top-quarter {
+  @include full-screen;
+  @include quarter-screen;
+  @include flex-center-overflow;
+  left: -$border-leftright-width;
+}
+
+.left-bottom-quarter {
+  @include full-screen;
+  @include quarter-screen;
+  @include flex-center-overflow;
+  left: -$border-leftright-width;
+  top: calc(($slide-height / 2) - $border-updown-width + 5px);
+}
+
+.right-half {
+  @include full-screen;
+  @include half-screen;
+  @include flex-center-overflow;
+  right: -$border-leftright-width;
+}
+
+.right-top-quarter {
+  @include full-screen;
+  @include quarter-screen;
+  @include flex-center-overflow;
+  right: -$border-leftright-width;
+}
+
+.right-bottom-quarter {
+  @include full-screen;
+  @include quarter-screen;
+  @include flex-center-overflow;
+  right: -$border-leftright-width;
+  top: calc(($slide-height / 2) - $border-updown-width + 5px);
+}
+
+.left-half img,
+.left-top-quarter img,
+.left-bottom-quarter img,
+.right-half img,
+.right-top-quarter img,
+.right-bottom-quarter img {
+  @include flex-img-cover;
+}
+
 .background-color-div {
   @include full-screen;
 }
