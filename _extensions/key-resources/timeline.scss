@@ -107,10 +107,14 @@
   margin-left: -420px;
 }
 
-.timeline p {
-  margin: 0;
+.timeline * {
   font-size: 28px;
 }
+
+.timeline p {
+  margin: 0;
+}
+
 .timeline-date p {
   font-size: 25px;
 }
