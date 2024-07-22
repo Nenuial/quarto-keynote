@@ -49,6 +49,10 @@ $presentation-font-size-root: 36px;
   color: $presentation-heading-color;
 }
 
+.tippy-content {
+  z-index: 1000 !important;
+}
+
 .reveal .slide-logo {
   bottom: -35px !important;
   right: 0px !important;
@@ -134,7 +138,6 @@ html.print-pdf .slides {
   }
   
   .date {
-    display: inline-block;
     vertical-align: top;
     justify-content: right;
     float: right;
