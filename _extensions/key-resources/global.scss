@@ -45,19 +45,15 @@ $presentation-font-size-root: 36px;
 .reveal .footer {
   float: left;
   bottom: -30px !important;
-  z-index: 500 !important;
+  z-index: 10 !important;
   color: $presentation-heading-color;
-}
-
-.tippy-content {
-  z-index: 1000 !important;
 }
 
 .reveal .slide-logo {
   bottom: -35px !important;
   right: 0px !important;
   max-height: 2rem !important;
-  z-index: 500 !important;
+  z-index: 10 !important;
 }
 
 .underline {
