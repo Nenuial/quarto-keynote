@@ -1,8 +1,7 @@
 title: Common ressources
-version: 1.5.3
+version: 1.5.4
 quarto-required: ">=1.4.0"
 contributes:
   formats:
     revealjs:
       theme: [dark]
-
