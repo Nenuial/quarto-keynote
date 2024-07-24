@@ -1,0 +1,17 @@
+<script>
+  function updateLogoPosition(event) {
+    const logo = document.querySelector("img.slide-logo");
+    if (logo) {
+      if (event.indexh > 0) {
+        logo.classList.add("slide-logo-small");
+      } else {
+        logo.classList.remove("slide-logo-small");
+      }
+    } else {
+      console.warn('No logo element found');
+    }
+  }
+
+  Reveal.addEventListener('ready', updateLogoPosition);
+  Reveal.addEventListener('slidechanged', updateLogoPosition);
+</script>

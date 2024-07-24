@@ -1,0 +1,18 @@
+title: Swiss Equestrian theme
+author: Pascal Burkhard
+version: 1.0.0
+quarto-required: ">=1.6.0"
+contributes:
+  formats:
+    revealjs:
+      theme: ["font.scss", "../key-resources/global.scss", "../key-resources/letterbox.scss", "../key-resources/timeline.scss", "../key-resources/custom-callouts.scss", "swissequestrian.scss"]
+      include-after-body: 
+        - "../key-resources/theme.html"
+        - "resources/logo.html"
+      filters: 
+        - ../custom-callouts/custom-callouts.lua
+      width: 1280
+      height: 720
+      logo: resources/logo-se-light.svg
+      title-slide-attributes:
+        data-background-color: "#00283c"
