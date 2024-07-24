@@ -8,10 +8,8 @@ date-format: "MMMM YYYY"
 lang: "fr-ch"
 
 format:
-  lasource-key-revealjs:
-    progress: false
-    menu: false
-    footer: "OC Géo"
+  pomored-key-revealjs: default
+
 callout-appearance: simple
 ---
 
@@ -121,6 +119,27 @@ Some `code` in a slide.
 :::
 
 ## Test light background {.no-footer background-color="#f3f6f9"}
+
+Some `code` in a slide.
+
+```{r, eval=FALSE, echo=TRUE}
+some_var = 123
+
+example_function(some_var)
+```
+
+
+:::callout-women
+
+## Et les femmes ?
+
+- A thing
+- Another
+
+:::
+
+
+## Test light background {.no-footer background-color="black"}
 
 Some `code` in a slide.
 
