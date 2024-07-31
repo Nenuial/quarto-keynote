@@ -1,6 +1,6 @@
 title: Swiss Equestrian theme
 author: Pascal Burkhard
-version: 1.0.2
+version: 1.1.0
 quarto-required: ">=1.6.0"
 contributes:
   formats:
@@ -13,6 +13,6 @@ contributes:
         - ../custom-callouts/custom-callouts.lua
       width: 1280
       height: 720
-      logo: resources/logo-se-light.svg
+      logo: resources/logo-se-dark.svg
       title-slide-attributes:
         data-background-color: "#00283c"
