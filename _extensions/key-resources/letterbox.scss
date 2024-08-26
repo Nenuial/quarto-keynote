@@ -86,7 +86,8 @@ html.print-pdf .quarto-dark {
 @mixin flex-img-cover {
   flex-shrink: 0;
   min-width: 100%;
-  min-height: 100%
+  min-height: 100%;
+  object-fit: cover;
 }
 
 .full-frame {
@@ -148,16 +149,17 @@ html.print-pdf .quarto-dark {
   top: calc(($slide-height / 2) - $border-updown-width + 5px);
 }
 
+.image-cover {
+  @include flex-center-overflow;
+}
+
 .left-half img,
 .left-top-quarter img,
 .left-bottom-quarter img,
 .right-half img,
 .right-top-quarter img,
-.right-bottom-quarter img {
-  @include flex-img-cover;
-}
-
-.image-cover {
+.right-bottom-quarter img,
+.image-cover img {
   @include flex-img-cover;
 }
 
