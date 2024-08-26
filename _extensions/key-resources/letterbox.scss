@@ -157,6 +157,10 @@ html.print-pdf .quarto-dark {
   @include flex-img-cover;
 }
 
+.image-cover {
+  @include flex-img-cover;
+}
+
 .background-color-div {
   @include full-screen;
 }
