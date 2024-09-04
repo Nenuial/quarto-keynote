@@ -163,6 +163,14 @@ html.print-pdf .quarto-dark {
   @include flex-img-cover;
 }
 
+.drop-shadow img {
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+}
+
+.no-caption figcaption {
+  display: none;
+}
+
 .background-color-div {
   @include full-screen;
 }
