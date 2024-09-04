@@ -48,6 +48,17 @@ html.print-pdf .quarto-dark {
   border-bottom-width: 40px;
 }
 
+.slides:has(.scroll-page) {
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+
+.scroll-page {
+  background-color: $body-bg !important;
+}
+
 .image-left {
   @include full-screen;
   left: -$border-leftright-width;

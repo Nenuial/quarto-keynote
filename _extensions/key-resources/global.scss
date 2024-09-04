@@ -56,6 +56,22 @@ $presentation-font-size-root: 36px;
   z-index: 10 !important;
 }
 
+@media screen and (max-width: 800px) {
+  .reveal .footer {
+    float: left;
+    bottom: 25px !important;
+    z-index: 10 !important;
+    color: $presentation-heading-color;
+  }
+
+  .reveal .slide-logo {
+    bottom: 10px !important;
+    right: 20px !important;
+    max-height: 2rem !important;
+    z-index: 10 !important;
+  }
+}
+
 .underline {
   border-bottom: 2px solid;
 }
