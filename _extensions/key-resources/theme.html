@@ -182,3 +182,18 @@ Reveal.on('ready', () => {
     });
 })
 </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.self != window.top) {
+        // Execute JavaScript specific to iframe embedding
+        Reveal.configure({
+          scrollActivationWidth: null,
+        });
+  
+        // Remove footer and logo in iframe embedding
+        document.querySelector("div .slide-logo").style.visibility = "hidden";
+        document.querySelector("div .footer").style.visibility = "hidden";
+    }
+  });
+  </script>
