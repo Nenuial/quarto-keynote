@@ -187,8 +187,10 @@ Reveal.on('ready', () => {
   document.addEventListener('DOMContentLoaded', function () {
     if (window.self != window.top) {
         // Execute JavaScript specific to iframe embedding
-        Reveal.configure({
-          scrollActivationWidth: null,
+        Reveal.on('ready', () => {
+          Reveal.configure({
+            scrollActivationWidth: null,
+          });
         });
   
         // Remove footer and logo in iframe embedding
