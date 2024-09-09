@@ -332,13 +332,13 @@ span.term {
 
 .cell-output {
   font-size: 60%;
-  border-radius: 4px;
+  border-radius: 6px;
   border: 1px solid $body-color;
   background-color: darken($body-bg, 5%);
 }
 
-.cell-output pre {
-  border-radius: 4px;
+.cell-output pre, .cell-output code {
+  border-radius: 6px;
 }
 
 .kbd {
