@@ -320,7 +320,6 @@ span.term {
   white-space: pre;
   padding-left: 3px;
   padding-right: 3px;
-  border-radius: 5px;
 }
 
 .reveal pre {
@@ -336,6 +335,10 @@ span.term {
   border-radius: 4px;
   border: 1px solid $body-color;
   background-color: darken($body-bg, 5%);
+}
+
+.cell-output pre {
+  border-radius: 4px;
 }
 
 .kbd {
