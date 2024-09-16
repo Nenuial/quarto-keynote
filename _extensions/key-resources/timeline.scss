@@ -236,3 +236,8 @@
 .timeline-block.timeline-block-icon-only .timeline-content {
   visibility: hidden;
 }
+
+// Fix for timeline content not disappearing correctly with fade-out
+.reveal .fragment.fade-out.visible {
+  display: none;
+}
