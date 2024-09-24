@@ -396,3 +396,14 @@ span.term {
 .bg-white {
   background-color: #fffeea;
 }
+
+.reveal .smaller .callout.callout-style-default .callout-icon::before,
+.reveal .smaller .callout.callout-style-simple .callout-icon::before {
+  height: 1rem;
+  width: 1rem;
+  background-size: 1rem 1rem;
+}
+
+.reveal .callout.callout-titled .callout-icon::before {
+  margin-top: .7rem;
+}
