@@ -13,7 +13,7 @@ $presentation-heading-color: #6098c0; // Color for headings
 
 $code-block-bg: $body-bg; // Code block background color
 $code-block-border-color: lighten($body-color, 60%); // Code block border color
-$code-color: var(–quarto-hl-fu-color);
+$code-color: var(-quarto-hl-fu-color);
 $code-bg: #778390;
 
 $light-bg-text-color: #4f6974;
