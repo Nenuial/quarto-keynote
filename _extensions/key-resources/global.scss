@@ -335,6 +335,7 @@ span.term {
   border-radius: 6px;
   border: 1px solid $body-color;
   background-color: darken($body-bg, 5%);
+  overflow-x: scroll;
 }
 
 .cell-output pre, .cell-output code {
