@@ -45,7 +45,7 @@ $presentation-font-size-root: 36px;
 .reveal .footer {
   float: left;
   bottom: -30px !important;
-  z-index: 10 !important;
+  z-index: 1000 !important;
   color: $presentation-heading-color;
 }
 
@@ -53,14 +53,14 @@ $presentation-font-size-root: 36px;
   bottom: -35px !important;
   right: 0px !important;
   max-height: 2rem !important;
-  z-index: 10 !important;
+  z-index: 1000 !important;
 }
 
 
 .scroll-page ~ .footer {
     float: left;
     bottom: 25px !important;
-    z-index: 10 !important;
+    z-index: 1000 !important;
     color: $presentation-heading-color;
   }
 
@@ -68,7 +68,7 @@ $presentation-font-size-root: 36px;
     bottom: 10px !important;
     right: 20px !important;
     max-height: 2rem !important;
-    z-index: 10 !important;
+    z-index: 1000 !important;
 }
 
 .underline {
