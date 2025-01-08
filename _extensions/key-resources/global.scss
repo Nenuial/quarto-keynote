@@ -413,3 +413,7 @@ span.term {
 .reveal .callout.callout-titled .callout-icon::before {
   margin-top: .7rem;
 }
+
+.reveal div.callout-title {
+  color: $body-color !important;
+}
