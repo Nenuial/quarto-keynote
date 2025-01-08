@@ -1,0 +1,13 @@
+title: Mononoke theme
+author: Pascal Burkhard
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    revealjs:
+      theme: ["../key-resources/global.scss", "../key-resources/letterbox.scss", "../key-resources/timeline.scss", "../key-resources/custom-callouts.scss", "mononoke.scss"]
+      include-after-body: "../key-resources/theme.html"
+      filters: 
+        - ../custom-callouts/custom-callouts.lua
+      width: 1280
+      height: 720
