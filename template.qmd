@@ -16,63 +16,12 @@ webr:
     - https://nenuial.r-universe.dev
 
 format:
-  jerusalem-key-revealjs:
+  lumina-key-revealjs:
     ojs-engine: true
-    filters: 
-      - live
 
 callout-appearance: simple
 ---
 
-{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
-
-## First try
-
-```{r}
-#| echo: false
-#| include: false
-
-library(geojsonio)
-
-geojson_read("~/Desktop/world.json") -> world_geojson
-
-ojs_define(world = world_geojson)
-```
-
-```{ojs}
-viz = require("geoviz@0.7.0")
-
-{
-  // We create a container
-  const svg = viz.create({ domain: world });
-
-  // We choose breaks and colors
-  const data = world.features.map((d) => d.properties.gdppc);
-  const choro = viz.tool.choro(data, {
-    method: "quantile",
-    nb: 6,
-    precision: 0,
-    colors: "PinkYl"
-  });
-
-  // We display countries with colors
-  svg.path({
-    data: world,
-    fill: (d) => choro.colorize(d.properties.gdppc),
-    tip: "$NAMEen\n$gdppc"
-  });
-
-  // We adda a legend
-  svg.legend.choro_horizontal({
-    pos: [400, 380],
-    ...choro,
-    title: "GDP per Capita"
-  });
-
-  // We render the SVG
-  return svg.render();
-}
-```
 
 ## {.no-title}
 
