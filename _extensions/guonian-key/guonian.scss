@@ -2,19 +2,19 @@
 
 // Colors
 
-$body-bg: #413E5E; // Background color
-$body-color: #FFE29E; // Default text color
-$link-color: #EB9B6A; // Link color
+$body-bg: #1f1237; // Background color
+$body-color: #cc9456; // Default text color
+$link-color: #7a2233; // Link color
 $link-color-hover: lighten($link-color, 15%);
 $selection-bg: #FFE29E; // Color of selection
 $selection-color: #5C5A85; // Color of selected text
 $border-color: lighten($body-color, 30%); // Color for borders
-$presentation-heading-color: #8C394B; // Color for headings
+$presentation-heading-color: #be3b49; // Color for headings
 
 $code-block-bg: $body-bg; // Code block background color
 $code-block-border-color: lighten($body-color, 60%); // Code block border color
 $code-color: var(-quarto-hl-fu-color);
-$code-bg: #4D5566;
+$code-bg: #3d325c;
 
 $light-bg-text-color: #8C394B;
 $light-bg-link-color: #EB9B6A;
