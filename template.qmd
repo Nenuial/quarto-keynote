@@ -16,7 +16,7 @@ webr:
     - https://nenuial.r-universe.dev
 
 format:
-  lumina-key-revealjs:
+  guonian-key-revealjs:
     ojs-engine: true
 
 callout-appearance: simple
