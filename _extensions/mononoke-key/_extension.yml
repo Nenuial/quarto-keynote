@@ -1,6 +1,6 @@
 title: Mononoke theme
 author: Pascal Burkhard
-version: 1.0.0
+version: 1.0.1
 quarto-required: ">=1.4.0"
 contributes:
   formats:
@@ -11,3 +11,4 @@ contributes:
         - ../custom-callouts/custom-callouts.lua
       width: 1280
       height: 720
+source: nenuial/quarto-keynote

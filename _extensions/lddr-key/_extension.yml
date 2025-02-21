@@ -1,6 +1,6 @@
 title: LDDR theme
 author: Pascal Burkhard
-version: 1.0.2
+version: 1.0.3
 quarto-required: ">=1.4.0"
 contributes:
   formats:
@@ -14,3 +14,4 @@ contributes:
       height: 720
       revealjs-plugins:
         - codewindow
+source: nenuial/quarto-keynote
