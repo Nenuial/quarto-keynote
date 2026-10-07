@@ -1,7 +1,0 @@
-title: "Custom callouts"
-author: "Pascal Burkhard"
-version: 1.0.3
-contributes:
-  filters:
-    - custom-callouts.lua
-source: nenuial/quarto-keynote

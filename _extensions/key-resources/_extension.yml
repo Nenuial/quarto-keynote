@@ -1,8 +1,0 @@
-title: Common ressources
-version: 1.7.17
-quarto-required: ">=1.4.0"
-contributes:
-  formats:
-    revealjs:
-      theme: [dark]
-source: nenuial/quarto-keynote
