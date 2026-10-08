@@ -69,46 +69,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sem purus, egestas 
 
 :::
 
-## Timeline {.fragment-remove}
-
-::: {.container .fragment .fade-up fragment-index=1}
-::: {.timeline .timeline-left style="height: 600px;"}
-
-::: {.timeline-block}
-::: {.timeline-icon}
-
-:::
-::: {.timeline-content}
-Lorem ipsum.
-
-::: {.timeline-details .fragment .fade-out fragment-index=2}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sem purus, egestas ut nulla placerat, sodales venenatis nisi. Quisque commodo malesuada ultrices.
-:::
-::: {.timeline-date}
-1 jun 1999
-:::
-:::
-:::
-
-::: {.timeline-block .fragment .fade-up fragment-index=2}
-::: {.timeline-icon}
-
-:::
-::: {.timeline-content}
-Lorem ipsum.
-
-::: {.timeline-details .fragment .fade-out fragment-index=3}
-Lorem [ipsum dolor sit](template.qmd) amet, consectetur adipiscing elit. Nam sem purus, egestas ut nulla placerat, sodales venenatis nisi. Quisque commodo malesuada ultrices.
-:::
-::: {.timeline-date}
-1 jan 2000
-:::
-:::
-:::
-
-:::
-:::
-
 ## Test
 
 ```{r, eval=FALSE, echo=TRUE}

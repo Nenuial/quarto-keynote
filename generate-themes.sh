@@ -33,7 +33,7 @@ quarto-required: ">=1.4.0"
 contributes:
   formats:
     revealjs:
-      theme: ["../keynote/global.scss", "../keynote/letterbox.scss", "../keynote/timeline.scss", "../keynote/custom-callouts.scss", "../keynote/palettes/$name.scss"]
+      theme: ["../keynote/global.scss", "../keynote/letterbox.scss", "../keynote/custom-callouts.scss", "../keynote/palettes/$name.scss"]
       include-after-body: "../keynote/theme.html"
       filters:
         - ../keynote/custom-callouts.lua
