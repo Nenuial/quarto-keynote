@@ -1,0 +1,99 @@
+---
+title: "Infographic layouts"
+subtitle: "Demo of infographic.scss"
+author: "Pascal Burkhard"
+lang: "en-US"
+format:
+  lumina-key-revealjs:
+    footer: "Infographics"
+---
+
+## Switzerland {.profile accent="#d52b1e"}
+
+::: {.kicker}
+Country profile · Europe
+:::
+
+::: {.tagline}
+Mountains, lakes and four languages
+:::
+
+::: {.stats}
+::: {.stat}
+[9]{.num} [million]{.unit}
+
+inhabitants
+:::
+::: {.stat}
+[41 285]{.num} [km²]{.unit}
+
+area
+:::
+::: {.stat}
+[4]{.num} [languages]{.unit}
+
+national languages
+:::
+::: {.stat}
+[1848]{.num .no-count}
+
+federal state
+:::
+:::
+
+::: {.bar}
+<span style="width: 62%; background: #d52b1e;">German 62 %</span><span style="width: 23%; background: #f2a3a0;">French 23 %</span><span style="width: 15%; background: #ddd;">Other</span>
+:::
+
+::: {.fact .fragment}
+Switzerland has **no** single capital in its constitution: Bern is the "federal city".
+:::
+
+## Mountains {.part part="01"}
+
+::: {.question}
+Why do the Alps keep growing?
+:::
+
+## Three ways to compare
+
+::: {.cards style="--n: 3;"}
+::: {.card}
+[Area]{.ttl}
+[41 285]{.big}
+km², about 1/13 of France
+:::
+::: {.card accent="#a3be8c"}
+[Forest]{.ttl}
+
+- a third of the land
+- protected since 1876
+:::
+::: {.card}
+[Lakes]{.ttl}
+[1 500]{.big}
+lakes, 6 % of Europe's fresh water
+:::
+:::
+
+::: {.takeaway}
+A small country with a lot of relief.
+:::
+
+## Aurora {.no-title .no-footer .no-logo background-image="aurora.png" background-size="cover"}
+
+::: {.caption}
+[Aurora]{.ttl}
+Light from the solar wind meeting the **upper atmosphere**.
+:::
+
+## Who am I?
+
+::: {.clues .incremental}
+* I am a country without a coast.
+* I have four national languages.
+:::
+
+::: {.reveal-answer .fragment}
+Switzerland
+:::
