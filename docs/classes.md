@@ -186,6 +186,23 @@ Venus is almost twice as far from the Sun as Mercury. So why is it hotter?
 | `.part-img` | Image in the top right, 520px wide, behind the text. Adjust it with `style="width: 380px; top: 140px; right: 80px;"`. |
 | `.part-img.fade` | The same, with fading edges (see `.hero.fade`) |
 
+### Cover title slide: `title-slide-attributes`
+
+A title slide in the style of the chapter openers: a picture on the right of the letterbox that fades into the slide, a large title in an accent colour with a short bar, the subtitle as a spaced kicker, and the author and date in muted type. It is switched on from the front matter:
+
+```yaml
+title-slide-attributes:
+  data-cover: images/head_atmosphere.png
+  data-cover-accent: "#7ec8ff"
+  data-cover-blend: lighten
+```
+
+| Attribute | Effect |
+|---|---|
+| `data-cover` | The picture, relative to the deck: a 2:3 portrait fills a 600 × 800 px frame on the right. `theme.html` adds the class `.cover` to `#title-slide`. List the picture under `resources:`, since only the script uses it. |
+| `data-cover-accent` | Colour of the title and its bar (default `--accent`) |
+| `data-cover-blend` | A `background-blend-mode` against the slide colour: `lighten` makes the black of a photo (space, night) take the slide colour |
+
 ### Cards: `.cards` › `.card`
 
 Side-by-side boxes for definitions, comparisons and moons.
@@ -397,6 +414,7 @@ A deck can change the text sizes for one chart (`.reveal .rotation text { font-s
 | References | A reference list (`#refs`) taller than the slide is split over several slides with the same title and a page count (`References 1/2`), instead of scrolling; the slide menu and PDF export get every page, and `#/references-2` links to the second |
 | Print frame | In print view (`?print-pdf`), copies the footer and logo onto every page, except on `.no-footer` or `.no-logo` slides |
 | `no-footer`, `no-logo` | Hide the footer and the logo while such a slide is shown |
+| Cover title slide | With `title-slide-attributes: data-cover`, adds `.cover` to `#title-slide` and sets `--cover-img` (absolute URL), `--cover-accent` and `--cover-blend` |
 | Iframe embedding | Inside an iframe, hides the footer and the logo and turns off the scroll view |
 | Accents | `accent="#hex"` on any element sets its `--accent` |
 | Count-up | `.stat .num` counts up when its slide is shown (see `.stats`); not in print or in a hidden tab |
