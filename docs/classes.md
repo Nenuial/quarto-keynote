@@ -394,6 +394,7 @@ A deck can change the text sizes for one chart (`.reveal .rotation text { font-s
 |---|---|
 | Backgrounds | Moves `background-color`, `background-image`, `background-video` and `background-iframe` from Reveal's background layer into the slide (`.background-*-div`), so they fill the letterbox and not the whole window. Background videos get controls. |
 | Controls | Moves the menu button, progress bar, slide number, footer and logo inside `.slides`, so they sit in the letterbox |
+| References | A reference list (`#refs`) taller than the slide is split over several slides with the same title and a page count (`References 1/2`), instead of scrolling; the slide menu and PDF export get every page, and `#/references-2` links to the second |
 | Print frame | In print view (`?print-pdf`), copies the footer and logo onto every page, except on `.no-footer` or `.no-logo` slides |
 | `no-footer`, `no-logo` | Hide the footer and the logo while such a slide is shown |
 | Iframe embedding | Inside an iframe, hides the footer and the logo and turns off the scroll view |
