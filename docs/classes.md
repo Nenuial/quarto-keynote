@@ -337,6 +337,7 @@ An inline SVG chart, written in the slide or built by a deck script. Draw it in 
 | `text` | 16px `--muted` text; `.lbl` 18px semibold, `.big` 22px semibold in the body color |
 | `.curve` | 4px round line, no fill; color it with `style="stroke: …"`. `.dashed` for a dashed one. |
 | `.curve.draw` | With `pathLength="1"`, inside a `.fragment`: the curve draws itself in 2.2 s when the fragment appears (drawn at once in print) |
+| `.curve.dashed.draw` | Inside a `.fragment`, **without** `pathLength` (it would stretch the dashes into one): the dashed curve is wiped in from the left in 2.2 s. Suits curves that run left to right. |
 | `.area` | Filled shape without a stroke (e.g. the gap between two curves) |
 
 A deck can change the text sizes for one chart (`.reveal .rotation text { font-size: 15px; }`).
