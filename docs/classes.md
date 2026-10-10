@@ -8,7 +8,7 @@ Slides are 1280 × 720 px. The examples are Quarto markdown.
 | File | Role |
 |---|---|
 | `_extensions/keynote/global.scss` | Fonts, headings, footer and logo, small utility classes, boxes, quotes, code |
-| `_extensions/keynote/letterbox.scss` | The letterbox frame around the slide, and full-bleed images and backgrounds that cover it |
+| `_extensions/keynote/letterbox.scss` | The letterbox frame around the slide (anything that overflows it is clipped at its outer edge), and full-bleed images and backgrounds that cover it |
 | `_extensions/keynote/custom-callouts.scss` + `custom-callouts.lua` | Extra callout types (`callout-paper`, `callout-women`, …) |
 | `_extensions/keynote/infographic.scss` | Infographic layouts: profile slides with key numbers, chapter openers, cards, facts, captions, quiz, line charts, and the frame of interactive canvases |
 | `_extensions/keynote/theme.html` | Scripts run after the slides load (backgrounds, footer and logo, print view, count-up, accents) |
