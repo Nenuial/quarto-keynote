@@ -181,7 +181,7 @@ Venus is almost twice as far from the Sun as Mercury. So why is it hotter?
 
 | Class or attribute | Effect |
 |---|---|
-| `section.part` | Title 80px, 230px from the top, no underline |
+| `section.part` | Title 80px, 230px from the top, no underline; no footer and no logo (as `.no-footer .no-logo`) |
 | `part="02"` | Watermark number in the top left, in `--ghost` |
 | `.question` | Italic muted text with an accent "Question:" prefix (`fr` "Question :", `de` "Frage:", or `label="…"`) |
 | `.part-img` | Image in the top right, 520px wide, behind the text. Adjust it with `style="width: 380px; top: 140px; right: 80px;"`. |
@@ -432,8 +432,8 @@ A deck can change the text sizes for one chart (`.reveal .rotation text { font-s
 | Backgrounds | Moves `background-color`, `background-image`, `background-video` and `background-iframe` from Reveal's background layer into the slide (`.background-*-div`), so they fill the letterbox and not the whole window. Background videos get controls. |
 | Controls | Moves the menu button, progress bar, slide number, footer and logo inside `.slides`, so they sit in the letterbox |
 | References | A reference list (`#refs`) taller than the slide is split over several slides with the same title and a page count (`References 1/2`), instead of scrolling; the slide menu and PDF export get every page, and `#/references-2` links to the second |
-| Print frame | In print view (`?print-pdf`), copies the footer and logo onto every page, except on `.no-footer` or `.no-logo` slides |
-| `no-footer`, `no-logo` | Hide the footer and the logo while such a slide is shown |
+| Print frame | In print view (`?print-pdf`), copies the footer and logo onto every page, except on `.no-footer` or `.no-logo` slides and chapter openers (`.part`) |
+| `no-footer`, `no-logo`, `.part` | Hide the footer, the logo, or both (`.part`) while such a slide is shown |
 | Cover title slide | With `title-slide-attributes: data-cover`, adds `.cover` to `#title-slide` and sets `--cover-img` (absolute URL), `--cover-accent` and `--cover-blend` |
 | Licence and AI badges | Moves `.title-badges` (`badges.lua`) next to the logo and shows it on the title slide only |
 | Iframe embedding | Inside an iframe (e.g. the vignettes of GeoDoc), always the scroll view, whatever the width: the slides one after the other at the full width of the frame (`scrollLayout: compact`, no margin, no snap), without footer, logo, badges or scrollbar (`html.embedded`) |
