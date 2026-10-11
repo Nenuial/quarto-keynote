@@ -37,6 +37,7 @@ contributes:
       include-after-body: "../keynote/theme.html"
       filters:
         - ../keynote/custom-callouts.lua
+        - ../keynote/badges.lua
       revealjs-plugins:
         - ../keynote/codewindow
       width: 1280
