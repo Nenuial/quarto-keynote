@@ -416,7 +416,7 @@ A deck can change the text sizes for one chart (`.reveal .rotation text { font-s
 | Print frame | In print view (`?print-pdf`), copies the footer and logo onto every page, except on `.no-footer` or `.no-logo` slides |
 | `no-footer`, `no-logo` | Hide the footer and the logo while such a slide is shown |
 | Cover title slide | With `title-slide-attributes: data-cover`, adds `.cover` to `#title-slide` and sets `--cover-img` (absolute URL), `--cover-accent` and `--cover-blend` |
-| Iframe embedding | Inside an iframe, hides the footer and the logo and turns off the scroll view |
+| Iframe embedding | Inside an iframe (e.g. the vignettes of GeoDoc), always the scroll view, whatever the width: the slides one after the other at the full width of the frame (`scrollLayout: compact`, no margin, no snap), without footer, logo or scrollbar (`html.embedded`) |
 | Accents | `accent="#hex"` on any element sets its `--accent` |
 | Count-up | `.stat .num` counts up when its slide is shown (see `.stats`); not in print or in a hidden tab |
 
