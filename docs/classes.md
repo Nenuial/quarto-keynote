@@ -186,6 +186,7 @@ Venus is almost twice as far from the Sun as Mercury. So why is it hotter?
 | `.question` | Italic muted text with an accent "Question:" prefix (`fr` "Question :", `de` "Frage:", or `label="…"`) |
 | `.part-img` | Image in the top right, 520px wide, behind the text. Adjust it with `style="width: 380px; top: 140px; right: 80px;"`. |
 | `.part-img.fade` | The same, with fading edges (see `.hero.fade`) |
+| `.part-img.bleed` | The picture fills the right of the letterbox, top to bottom, and fades into the slide on its left, like the cover title slide. It is cropped to fill; `style="--img-pos: 30% center;"` moves the crop. |
 
 ### Cover title slide: `title-slide-attributes`
 
@@ -310,7 +311,7 @@ Venus
 
 | Class | Effect |
 |---|---|
-| `.clues` | 30px list with spacing |
+| `.clues` | 30px list with spacing, kept clear of the answer box (full width minus 460px) |
 | `.reveal-answer` | Box in the top right, 400px, 44px accent text. The image inside is 340px wide. |
 
 ### Interactive canvas: `.sim` › `.sim-controls`
