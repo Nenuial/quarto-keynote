@@ -438,6 +438,7 @@ A deck can change the text sizes for one chart (`.reveal .rotation text { font-s
 | Cover title slide | With `title-slide-attributes: data-cover`, adds `.cover` to `#title-slide` and sets `--cover-img` (absolute URL), `--cover-accent` and `--cover-blend` |
 | Licence and AI badges | Moves `.title-badges` (`badges.lua`) next to the logo and shows it on the title slide only |
 | Iframe embedding | Inside an iframe (e.g. the vignettes of GeoDoc), always the scroll view, whatever the width: the slides one after the other at the full width of the frame (`scrollLayout: compact`, no margin, no snap), without footer, logo, badges or scrollbar (`html.embedded`) |
+| Speaker view | Its previews of the current and next slides are iframes loaded with `?receiver`: no embedding there, and never the scroll view, however narrow the frame (`scrollActivationWidth: 0`) |
 | Accents | `accent="#hex"` on any element sets its `--accent` |
 | Count-up | `.stat .num` counts up when its slide is shown (see `.stats`); not in print or in a hidden tab |
 
