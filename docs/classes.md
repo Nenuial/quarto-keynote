@@ -418,7 +418,7 @@ A deck can change the text sizes for one chart (`.reveal .rotation text { font-s
 | `.full-frame` | Iframe or content covering the whole letterbox |
 | `.image-cover` | Image cropped to fill its box |
 | `.drop-shadow` | Shadow under the images inside |
-| `.no-caption` | Hides figure captions |
+| `.no-caption` | Hides figure captions, on a figure or on the image (`![credit](img.jpg){.lightbox .no-caption}`): the caption, usually the credit, then shows only in the lightbox. Use it for the credits of slides with several pictures; a single main picture takes an `attribution` block |
 | `img.icon` | Inline icon at text height |
 | `img.sticker-float-right`, `-left`, `-midright` | 160px sticker floating in the top corner |
 
