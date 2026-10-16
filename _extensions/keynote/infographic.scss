@@ -594,6 +594,27 @@ html.print-pdf .reveal .slides section.profile .hero img {
   display: none;
 }
 
+// ---------- Teacher slides ----------
+// Slides with .teacher are removed for students (theme.html); in teacher mode they carry a small tag.
+
+.teacher-mode .reveal .slides section.teacher::after {
+  content: "Teacher";
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  padding: 2px 12px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--r-background-color, #000);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+:lang(fr) .teacher-mode .reveal .slides section.teacher::after { content: "Enseignant"; }
+:lang(de) .teacher-mode .reveal .slides section.teacher::after { content: "Lehrperson"; }
+
 // ---------- Takeaway ----------
 
 .reveal .takeaway {

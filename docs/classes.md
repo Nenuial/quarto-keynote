@@ -314,6 +314,39 @@ Venus
 | `.clues` | 30px list with spacing, kept clear of the answer box (full width minus 460px) |
 | `.reveal-answer` | Box in the top right, 400px, 44px accent text. The image inside is 340px wide. |
 
+### Exercise: `.exercise`
+
+The slide that hands out a group exercise: badges (group, time, material), the steps as numbered cards, and a picture of the student sheet as a paper page on the right, linked to the sheet. The first paragraph holds the badges, the list the steps (each item starts with a bold title), the last paragraph the picture. Without a picture, the steps take the whole width.
+
+```markdown
+## Draw the sea zones
+
+::: {.exercise}
+[In groups]{.badge} [25 min]{.badge} [Compass, ruler]{.badge}
+
+1. **Read the map** Two imaginary states…
+2. **Draw** The baselines, the territorial sea…
+3. **Decide** Who gets the two gas fields?
+
+[![The student sheet, page 1](images/sheet_sea_zones.jpg)](https://…/Sea_zones.html)
+:::
+```
+
+| Class | Effect |
+|---|---|
+| `.exercise` | Grid: badges and steps on the left, the sheet on the right (`--sheet-w`, 340px) |
+| `.badge` | Pill with an accent border, 18px |
+| `.exercise > ol` | Steps as cards with a numbered accent disc; the first bold text of each is its title (26px, accent) |
+| last paragraph | The sheet: white page with a shadow, at most 500px high, slightly larger on hover |
+
+### Teacher slides: `.teacher`
+
+A slide only the teacher shows, e.g. the correction of an exercise, placed right after it. For students it is taken out of the deck (theme.html). Open the deck with `?teacher` to keep these slides: the browser remembers it, so the speaker view shows them too; `?teacher=off` forgets it. In teacher mode they carry a small "Teacher" tag (fr "Enseignant", de "Lehrperson"). The slides stay in the page source: hidden, not secret. Quarto's own `visibility="hidden"` cannot be used for this: Quarto drops such slides from the output.
+
+```markdown
+## Draw the sea zones: correction {.teacher}
+```
+
 ### Interactive canvas: `.sim` › `.sim-controls`
 
 The frame of a simulation whose script lives in the deck (orbits, expanding space…). The script appends a canvas and a control bar to an empty `.sim` div, and runs its animation only while the slide is shown.
@@ -440,6 +473,7 @@ A deck can change the text sizes for one chart (`.reveal .rotation text { font-s
 | Iframe embedding | Inside an iframe (e.g. the vignettes of GeoDoc), always the scroll view, whatever the width: the slides one after the other at the full width of the frame (`scrollLayout: compact`, no margin, no snap), without footer, logo, badges or scrollbar (`html.embedded`) |
 | Speaker view | Its previews of the current and next slides are iframes loaded with `?receiver`: no embedding there, and never the scroll view, however narrow the frame (`scrollActivationWidth: 0`) |
 | Accents | `accent="#hex"` on any element sets its `--accent` |
+| Teacher slides | Removes the `.teacher` slides and calls `Reveal.sync()`, unless the page was opened with `?teacher` (remembered in `localStorage`, key `keynote-teacher`; `?teacher=off` clears it); in teacher mode, adds `html.teacher-mode` |
 | Count-up | `.stat .num` counts up when its slide is shown (see `.stats`); not in print or in a hidden tab |
 
 ## Workflow
