@@ -44,6 +44,7 @@ A palette sets `$body-bg`, `$body-color`, `$link-color`, `$selection-bg`, `$sele
 | `$info-overlay-color` | `$body-color` | `--overlay-text` |
 | `$info-ghost` | `$body-color` at 7 % | `--ghost` |
 | `$info-on-accent` | the darker of `$body-bg` and `$body-color` | `--on-accent` |
+| `$timeline-accent` | `$presentation-heading-color`; `false` keeps the link colour (`default`, `edunum`) | `--htl-accent` of the htimeline extension |
 | `$info-title-shadow` | a dark shadow on dark palettes, a halo of `$body-bg` on light ones | the cover title's `text-shadow` |
 
 `lumina` and `nord` override `$info-panel`, `$info-overlay`, `$info-overlay-color` and `$info-ghost` to the values the Solar System deck was designed with.

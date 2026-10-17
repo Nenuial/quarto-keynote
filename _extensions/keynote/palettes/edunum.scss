@@ -7,6 +7,7 @@ $link-color: #DF683E; // Link color
 $selection-bg: #DF683E; // Color of selection
 $selection-color: #426a6a; // Color of selected text
 $presentation-heading-color: #4c6c77; // Color for headings
+$timeline-accent: false; // the timeline keeps the link colour (the slate headings are too dull for it)
 
 $code-bg: #F3F6FF;
 $code-block-border-color: darken($body-color, 60%);
