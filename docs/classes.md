@@ -454,12 +454,30 @@ A deck can change the text sizes for one chart (`.reveal .rotation text { font-s
 | `.image-cover` | Image cropped to fill its box |
 | `.drop-shadow` | Shadow under the images inside |
 | `.no-caption` | Hides figure captions, on a figure or on the image (`![credit](img.jpg){.lightbox .no-caption}`): the caption, usually the credit, then shows only in the lightbox. Use it for the credits of slides with several pictures; a single main picture takes an `attribution` block |
+| `attribution` block | The credit of a single main picture, along the right edge of the slide. Over a picture (a chapter opener with `.part-img.bleed`, or a slide with an `.image-right` picture) it gets a backdrop (`--overlay`), so it stays readable |
 | `img.icon` | Inline icon at text height |
 | `img.sticker-float-right`, `-left`, `-midright` | 160px sticker floating in the top corner |
 
 ### Callouts
 
 `::: callout-paper`, `callout-women`, `callout-link`, `callout-question`, `callout-pro`, `callout-con`, with `title="…"`. The colors and icons are defined in `$custom-callouts` (in `custom-callouts.scss`), and a palette can override that list.
+
+### A picture beside boxes: `::: {.column .fill-picture}`
+
+The picture fills its column and is cropped to it (`object-fit: cover`); the column takes the height of the row, so the top and bottom of the picture line up with the boxes (or text) of the other column, whatever their length. The cards of that row lose their top margin. `.fill-picture.stack` takes two pictures, one above the other. Always use it for a picture next to cards: a picture with its own height never lines up.
+
+```markdown
+::: {.columns}
+::: {.column width="55%"}
+::: {.cards style="--n: 1;"}
+…
+:::
+:::
+::: {.column .fill-picture width="45%"}
+![](images/norilsk.jpg){.lightbox}
+:::
+:::
+```
 
 ### Tabs: `::: {.panel-tabset}`
 
