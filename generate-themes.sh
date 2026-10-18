@@ -40,6 +40,7 @@ contributes:
         - ../keynote/badges.lua
       revealjs-plugins:
         - ../keynote/codewindow
+        - ../keynote/deck
       width: 1280
       height: 720
 source: nenuial/quarto-keynote

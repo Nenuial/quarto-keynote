@@ -343,7 +343,7 @@ The slide that hands out a group exercise: badges (group, time, material), the s
 
 ### Teacher slides: `.teacher`
 
-A slide only the teacher shows, e.g. the correction of an exercise, placed right after it. For students it is taken out of the deck (theme.html). Open the deck with `?teacher` to keep these slides: the browser remembers it, so the speaker view shows them too; `?teacher=off` forgets it. In teacher mode they carry a small "Teacher" tag (fr "Enseignant", de "Lehrperson"). The slides stay in the page source: hidden, not secret. Quarto's own `visibility="hidden"` cannot be used for this: Quarto drops such slides from the output.
+A slide only the teacher shows, e.g. the correction of an exercise, placed right after it. For students it is taken out of the deck (plugin `deck`). Open the deck with `?teacher` to keep these slides: the browser remembers it, so the speaker view shows them too; `?teacher=off` forgets it. In teacher mode they carry a small "Teacher" tag (fr "Enseignant", de "Lehrperson"). The slides stay in the page source: hidden, not secret. Quarto's own `visibility="hidden"` cannot be used for this: Quarto drops such slides from the output.
 
 ```markdown
 ## Draw the sea zones: correction {.teacher}
@@ -461,13 +461,26 @@ A deck can change the text sizes for one chart (`.reveal .rotation text { font-s
 
 `::: callout-paper`, `callout-women`, `callout-link`, `callout-question`, `callout-pro`, `callout-con`, with `title="…"`. The colors and icons are defined in `$custom-callouts` (in `custom-callouts.scss`), and a palette can override that list.
 
+### Tabs: `::: {.panel-tabset}`
+
+Quarto's tabs, drawn as tabs at every width, like those of the GeoDoc site: a line under the row, the open tab framed on three sides in the slide's colour, the others as links (`global.scss`). Tabby's own styles stack them as blocks below 30em, a width the scroll view of a phone reaches; the square list bullets are kept off them.
+
+## Plugin `deck` (`deck/deck.js`)
+
+It settles the slides in its `init`, before Reveal lays them out. On a phone held upright (narrower than 435px) Reveal shows the scroll view, which wraps each slide in a page of its own: a slide taken out or added after that leaves an empty page, and the scrolling breaks (fragments and lazy pictures never come).
+
+| Step | What it does |
+|---|---|
+| Teacher slides | Removes the `.teacher` slides, unless the page was opened with `?teacher` (remembered in `localStorage`, key `keynote-teacher`; `?teacher=off` clears it); in teacher mode, adds `html.teacher-mode` |
+| References | A reference list (`#refs`) taller than the slide is split over several slides with the same title and a page count (`References 1/2`), instead of scrolling; `#/references-2` links to the second. Measured again when the web fonts are loaded: in the scroll view the entries then move between the slides, which stay |
+| Slide menu | The menu is built from the slides as they were: on `ready`, the items of the slides taken out go, the pages of the references get theirs, and the items are numbered again |
+
 ## Scripts (`theme.html`)
 
 | Script | What it does |
 |---|---|
 | Backgrounds | Moves `background-color`, `background-image`, `background-video` and `background-iframe` from Reveal's background layer into the slide (`.background-*-div`), so they fill the letterbox and not the whole window. Background videos get controls. |
 | Controls | Moves the menu button, progress bar, slide number, footer and logo inside `.slides`, so they sit in the letterbox |
-| References | A reference list (`#refs`) taller than the slide is split over several slides with the same title and a page count (`References 1/2`), instead of scrolling; the slide menu and PDF export get every page, and `#/references-2` links to the second |
 | Print frame | In print view (`?print-pdf`), copies the footer and logo onto every page, except on `.no-footer` or `.no-logo` slides and chapter openers (`.part`) |
 | `no-footer`, `no-logo`, `.part` | Hide the footer, the logo, or both (`.part`) while such a slide is shown |
 | Cover title slide | With `title-slide-attributes: data-cover`, adds `.cover` to `#title-slide` and sets `--cover-img` (absolute URL), `--cover-accent` and `--cover-blend` |
@@ -475,7 +488,6 @@ A deck can change the text sizes for one chart (`.reveal .rotation text { font-s
 | Iframe embedding | Inside an iframe (e.g. the vignettes of GeoDoc), always the scroll view, whatever the width: the slides one after the other at the full width of the frame (`scrollLayout: compact`, no margin, no snap), without footer, logo, badges or scrollbar (`html.embedded`) |
 | Speaker view | Its previews of the current and next slides are iframes loaded with `?receiver`: no embedding there, and never the scroll view, however narrow the frame (`scrollActivationWidth: 0`) |
 | Accents | `accent="#hex"` on any element sets its `--accent` |
-| Teacher slides | Removes the `.teacher` slides and calls `Reveal.sync()`, unless the page was opened with `?teacher` (remembered in `localStorage`, key `keynote-teacher`; `?teacher=off` clears it); in teacher mode, adds `html.teacher-mode` |
 | Count-up | `.stat .num` counts up when its slide is shown (see `.stats`); not in print or in a hidden tab |
 
 ## Workflow
