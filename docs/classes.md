@@ -510,6 +510,7 @@ It settles the slides in its `init`, before Reveal lays them out. On a phone hel
 | Speaker view | Its previews of the current and next slides are iframes loaded with `?receiver`: no embedding there, and never the scroll view, however narrow the frame (`scrollActivationWidth: 0`) |
 | Accents | `accent="#hex"` on any element sets its `--accent` |
 | Count-up | `.stat .num` counts up when its slide is shown (see `.stats`); not in print or in a hidden tab |
+| Copy | A selection inside text set in capitals by the CSS (slide titles, card titles) is copied as written in the source, not in capitals (Chrome and Safari copy what they show) |
 
 ## Workflow
 
