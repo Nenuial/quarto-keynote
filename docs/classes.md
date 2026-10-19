@@ -206,6 +206,7 @@ title-slide-attributes:
 | `data-cover` | The picture, relative to the deck: a 2:3 portrait fills a 600 × 800 px frame on the right. `theme.html` adds the class `.cover` to `#title-slide`. List the picture under `resources:`, since only the script uses it. |
 | `data-cover-accent` | Colour of the title and its bar (default `--accent`) |
 | `data-cover-blend` | A `background-blend-mode` against the slide colour: `lighten` makes the black of a photo (space, night) take the slide colour |
+| `data-cover-position` | Which part of the picture the frame shows, as a CSS `background-position` (default `center`): `"right"` or `"30% 50%"` for a landscape photo whose subject is off centre |
 
 ### Licence and AI badges: `cc`, `ai`
 
