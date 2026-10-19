@@ -345,7 +345,7 @@ The slide that hands out a group exercise: badges (group, time, material), the s
 
 A slide only the teacher shows, e.g. the correction of an exercise, placed right after it. For students it is taken out of the deck (plugin `deck`). Open the deck with `?teacher` to keep these slides: the browser remembers it, so the speaker view shows them too; `?teacher=off` forgets it. In teacher mode they carry a small "Teacher" tag (fr "Enseignant", de "Lehrperson"). The slides stay in the page source: hidden, not secret. Quarto's own `visibility="hidden"` cannot be used for this: Quarto drops such slides from the output.
 
-On a correction (`.teacher` with `.exercise`) beside its answer key, the answers are set smaller and tighter, as any list of five steps or more; without a picture they take the full width at the normal size. Its picture is the answer key (the completed figure), opened in a lightbox (`![…](images/corr_….png){.lightbox}`); never the student sheet again.
+A list that goes on from a previous slide: `::: {.exercise style="--ex-start: 5;"}` numbers its steps from 6. On a correction (`.teacher` with `.exercise`) beside its answer key, the answers are set smaller and tighter, as any list of five steps or more; without a picture they take the full width at the normal size. Its picture is the answer key (the completed figure), opened in a lightbox (`![…](images/corr_….png){.lightbox}`); never the student sheet again.
 
 ```markdown
 ## Draw the sea zones: correction {.teacher}
