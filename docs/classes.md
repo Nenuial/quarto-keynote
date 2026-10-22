@@ -500,7 +500,7 @@ It settles the slides in its `init`, before Reveal lays them out. On a phone hel
 
 | Script | What it does |
 |---|---|
-| Backgrounds | Moves `background-color`, `background-image`, `background-video` and `background-iframe` from Reveal's background layer into the slide (`.background-*-div`), so they fill the letterbox and not the whole window. Background videos get controls. |
+| Backgrounds | Moves `background-color`, `background-image`, `background-video` and `background-iframe` from Reveal's background layer into the slide (`.background-*-div`), so they fill the letterbox and not the whole window. A slide keeps its `data-background-color`, so Reveal still marks it `.has-dark-background` or `.has-light-background` (the text colour) whenever it rebuilds its backgrounds, e.g. after a plugin calls `configure()`; Reveal's own layer stays transparent. Background videos get controls. |
 | Controls | Moves the menu button, progress bar, slide number, footer and logo inside `.slides`, so they sit in the letterbox |
 | Print frame | In print view (`?print-pdf`), copies the footer and logo onto every page, except on `.no-footer` or `.no-logo` slides and chapter openers (`.part`) |
 | `no-footer`, `no-logo`, `.part` | Hide the footer, the logo, or both (`.part`) while such a slide is shown |
