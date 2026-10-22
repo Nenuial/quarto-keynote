@@ -12,6 +12,7 @@ Slides are 1280 × 720 px. The examples are Quarto markdown.
 | `_extensions/keynote/custom-callouts.scss` + `custom-callouts.lua` | Extra callout types (`callout-paper`, `callout-women`, …) |
 | `_extensions/keynote/infographic.scss` | Infographic layouts: profile slides with key numbers, chapter openers, cards, facts, captions, quiz, line charts, and the frame of interactive canvases |
 | `_extensions/keynote/theme.html` | Scripts run after the slides load (backgrounds, footer and logo, print view, count-up, accents) |
+| `_extensions/keynote/french-spaces.lua` | French typography when the deck's `lang` is French: non-breaking spaces before `; : ! ? »` and `%`, after `«`, between a number and its unit or its groups of digits (`9 289 km`, `1:25 000`); `«mot»` gets its spaces. Write normal spaces in the `.qmd`: the filter makes them non-breaking. Code, maths, raw HTML and `12:30` are left alone |
 | `_extensions/keynote/badges.lua` + `badges/` | Licence and AI declaration badges on the title slide, from the `cc` and `ai` metadata (icons: see `badges/SOURCES.md`) |
 | `_extensions/keynote/codewindow/` | Bundled codewindow plugin (code blocks in a macOS-style window) |
 | `_extensions/keynote/palettes/<name>.scss` | One palette per theme: colors only |

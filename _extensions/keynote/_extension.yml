@@ -1,6 +1,6 @@
 title: Keynote
 author: Pascal Burkhard
-version: 3.13.6
+version: 3.14.0
 quarto-required: ">=1.4.0"
 contributes:
   formats:
@@ -10,6 +10,7 @@ contributes:
       filters:
         - custom-callouts.lua
         - badges.lua
+        - french-spaces.lua
       revealjs-plugins:
         - codewindow
         - deck

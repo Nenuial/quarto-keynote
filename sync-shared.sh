@@ -13,7 +13,7 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 src=_extensions/keynote
-shared=(global.scss letterbox.scss custom-callouts.scss infographic.scss theme.html custom-callouts.lua badges.lua badges codewindow deck)
+shared=(global.scss letterbox.scss custom-callouts.scss infographic.scss theme.html custom-callouts.lua badges.lua french-spaces.lua badges codewindow deck)
 version=$(sed -n 's/^version: *//p' "$src/_extension.yml")
 
 if [ $# -eq 0 ]; then
